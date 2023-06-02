@@ -71,6 +71,26 @@ async def get_burgerBycuisson(scoville: int):
     else:
         return "Aucun Burger avec une unité de scoville aussi faible"
 
+
+#TROUVER BURGER AVEC ALLERGENE 
+
+@app.get("/burgers-allergenes/{allergene}")
+async def get_burgerBycuisson(allergene: str):
+    
+    res = []
+    for i in burgers.find({"allergènes" : allergene } ):
+        res.append(Burger(**i))
+
+    if res!=[]:
+        return res
+    else:
+        return "Aucun Burger avec cette allergie"
+
+
+
+
+
+
 #SUPPRIMER UN BURGER NECESSITE UNE IDEE ALORS j'AI MIS l'ID GENEREE PAR MONGODB EN PARAMETRE DONC IL FAUT ALLER LA CHERCHER DANS LA BASE
 
 @app.delete("/burgers/{id}}")
@@ -89,4 +109,3 @@ def delete_burger(id: str):
 
 
     
-   
