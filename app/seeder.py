@@ -9,9 +9,9 @@ Magasin = client[db]
 burgers= Magasin[collection1]
 evaluateurs = Magasin[collection2]
 
-b1 = { "prix" : 10, "description" : 'Burger1' , "allegènes" : ["moutarde"] , "cuisson" : "saignant", "scoville": 5000}
-b2 = { "prix" : 15, "description" : 'Burger2' , "allegènes" : ["citron","noix"] , "cuisson" : "cuit", "scoville": 50000}
-b3 = { "prix" : 19, "description" : 'Burger3' , "allegènes" : ["cacao","noix"] , "cuisson" : "à point", "scoville": 15000}
+b1 = { "prix" : 10, "description" : 'Burger1' , "allergènes" : ["moutarde"] , "cuisson" : "saignant", "scoville": 5000}
+b2 = { "prix" : 15, "description" : 'Burger2' , "allergènes" : ["citron","noix"] , "cuisson" : "cuit", "scoville": 50000}
+b3 = { "prix" : 19, "description" : 'Burger3' , "allergènes" : ["cacao","noix"] , "cuisson" : "à point", "scoville": 15000}
 
 
 
