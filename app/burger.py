@@ -7,7 +7,7 @@ class Burger(BaseModel):
     allergènes : list[str]
     cuisson : str 
     scoville : int 
-
+'''
     @validator("prix")
     def prix_is_valid(cls, v):
         if(v<10 or v>20):
@@ -32,7 +32,7 @@ class Burger(BaseModel):
             raise ValueError('Indice Scoville invalide')
         return v 
 
-
+'''
 
 # VARIABLE DE DEBUGAGE    
 '''
