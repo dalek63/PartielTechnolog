@@ -30,11 +30,12 @@ class Burger(BaseModel):
     def scoville_is_valid(cls,v):
         if (v%1000 != 0 or v<5000 or v>65000):
             raise ValueError('Indice Scoville invalide')
-
+        return v 
 
 
 
 # VARIABLE DE DEBUGAGE    
+'''
+b1 = Burger(prix = 10, description = 'Burger', allergènes = ['moutarde'], cuisson = 'saignant', scoville = 5000)
 
-#b = Burger(prix = 10, description = 'Burger', allergènes = ['moutarde'], cuisson = 'saignant', scoville = 5000)
-
+b2 = Burger(prix = 15, description = 'Burger', allergènes = ['citron'], cuisson = 'cuit', scoville = 30000)'''
