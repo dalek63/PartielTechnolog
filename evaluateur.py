@@ -1,4 +1,4 @@
-from burgers import * 
+from burger import * 
 
 
 class EvaluateurVentes:
@@ -26,3 +26,13 @@ class EvaluateurVentes:
         for i in range(len(self.burgers)):
             res.extend(self.burgers[i].allergènes)
         return res
+
+
+#CLASSE DE DEBUGAGE
+'''
+e = EvaluateurVentes('10/10/2010')
+
+e.ajout_burger(b1)
+e.ajout_burger(b2)
+
+print(e.prix_total())'''

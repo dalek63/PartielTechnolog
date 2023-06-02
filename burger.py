@@ -35,6 +35,7 @@ class Burger(BaseModel):
 
 
 # VARIABLE DE DEBUGAGE    
+'''
+b1 = Burger(prix = 10, description = 'Burger', allergènes = ['moutarde'], cuisson = 'saignant', scoville = 5000)
 
-#b = Burger(prix = 10, description = 'Burger', allergènes = ['moutarde'], cuisson = 'saignant', scoville = 5000)
-
+b2 = Burger(prix = 15, description = 'Burger', allergènes = ['citron'], cuisson = 'cuit', scoville = 30000)'''
