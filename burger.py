@@ -32,5 +32,9 @@ class Burger(BaseModel):
             raise ValueError('Indice Scoville invalide')
 
 
-b = Burger(prix = 10, description = 'Burger', allergènes = ['moutarde'], cuisson = 'saignant', scoville = 5000)
+
+
+# VARIABLE DE DEBUGAGE    
+
+#b = Burger(prix = 10, description = 'Burger', allergènes = ['moutarde'], cuisson = 'saignant', scoville = 5000)
 
