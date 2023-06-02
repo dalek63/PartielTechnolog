@@ -8,8 +8,8 @@ from bson.objectid import ObjectId
 
 client = MongoClient(connect)
 Magasin = client[db]
-burgers= Magasin[collection1]
-evaluateurs = Magasin[collection2]
+burgers= Magasin[collection]
+
 
 app = FastAPI()
 
