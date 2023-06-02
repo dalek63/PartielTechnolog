@@ -14,8 +14,11 @@ class Burger(BaseModel):
             raise ValueError('Prix invalide')
         return v 
     
+    @validator("allergènes")
+    def allergènes_is_valid(cls, v):
+        if ("crustacé" in v or "poisson" in v or "soja" in v or "céleri" in v or "mollusques" in v):
+            raise ValueError('Allergènes invalides')
 
 
-
-#b = Burger(prix = 10, description = 'Burger', allergènes = ['moutarde'], cuisson = 'saignant', scoville = 5)
+b = Burger(prix = 10, description = 'Burger', allergènes = ['moutarde'], cuisson = 'saignant', scoville = 5)
 
