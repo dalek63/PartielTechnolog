@@ -30,7 +30,7 @@ class Burger(BaseModel):
     def scoville_is_valid(cls,v):
         if (v%1000 != 0 or v<5000 or v>65000):
             raise ValueError('Indice Scoville invalide')
-
+        return v 
 
 
 

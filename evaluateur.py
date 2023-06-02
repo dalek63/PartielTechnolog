@@ -19,4 +19,10 @@ class EvaluateurVentes:
         res = 0
         for i in range(len(self.burgers)):
             res = res + self.burgers[i].prix
-        return res    
+        return res 
+
+    def total_allergènes(self):
+        res = []
+        for i in range(len(self.burgers)):
+            res.extend(self.burgers[i].allergènes)
+        return res
